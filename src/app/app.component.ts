@@ -17,7 +17,7 @@ export interface Tile {
 export class AppComponent {
   counter = 0;
   jitter = 10;
-  blurCoefficient = .02;
+  blurCoefficient = 200;
   hueRotation = 0;
   rotationAdder = 1;
   hueRotationStyle: Object = {};
