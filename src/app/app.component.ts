@@ -17,7 +17,7 @@ export interface Tile {
 export class AppComponent {
   counter = 0;
   jitter = 10;
-  blurCoefficient = 200;
+  blurCoefficient = .00075;
   hueRotation = 0;
   rotationAdder = 1;
   hueRotationStyle: Object = {};
@@ -89,7 +89,7 @@ export class AppComponent {
     if (this.hueRotation >= 360 || this.hueRotation < 0) { this.rotationAdder = -this.rotationAdder; }
     this.hueRotation += this.rotationAdder;
     this.hueRotationStyle = {filter: `hue-rotate(${this.hueRotation}deg)`};
-    this.blurStyle = {filter: `blur(${this.blurCoefficient / Math.random() * this.jitter}px)`};
+    this.blurStyle = {filter: `blur(${this.hueRotation / 10 + 20}px)`};
     requestAnimationFrame(this.loop);
   }
 

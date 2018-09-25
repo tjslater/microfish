@@ -19,24 +19,24 @@
       [rowspan]="tile.rows"
       [style.background]="tile.backgroundColor"
     ></mat-grid-tile>
-    <!--<mat-grid-tile-->
-      <!--*ngFor="let tile of tilesRandom"-->
-      <!--[colspan]="tile.cols"-->
-      <!--[rowspan]="tile.rows"-->
-      <!--[style.background]="tile.backgroundColor"-->
-
-    <!--&gt;</mat-grid-tile>-->
-    <!--<mat-grid-tile-->
-      <!--*ngFor="let tile of tilesBlue"-->
-      <!--[colspan]="tile.cols"-->
-      <!--[rowspan]="tile.rows"-->
-      <!--[style.background]="tile.backgroundColor"-->
-    <!--&gt;</mat-grid-tile>-->
     <mat-grid-tile
-      *ngFor="let tile of tilesGrey"
+      *ngFor="let tile of tilesRandom"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.backgroundColor"
+
+    ></mat-grid-tile>
+    <mat-grid-tile
+      *ngFor="let tile of tilesBlue"
       [colspan]="tile.cols"
       [rowspan]="tile.rows"
       [style.background]="tile.backgroundColor"
     ></mat-grid-tile>
+    <!--<mat-grid-tile-->
+      <!--*ngFor="let tile of tilesGrey"-->
+      <!--[colspan]="tile.cols"-->
+      <!--[rowspan]="tile.rows"-->
+      <!--[style.background]="tile.backgroundColor"-->
+    <!--&gt;</mat-grid-tile>-->
   </mat-grid-list>
 </div>
