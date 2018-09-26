@@ -1,0 +1,12 @@
+<div class="rothko-container" [ngStyle]="containerStyles">
+  <div [ngStyle]="hueRotationStyle">
+    <mat-grid-list cols="{{colCount}}" rowHeight="{{rowHeight}}" [ngStyle]="blurStyle" *ngFor="let line of squareSize">
+      <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.backgroundColor"
+      ></mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

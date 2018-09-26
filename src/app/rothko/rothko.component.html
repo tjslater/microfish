@@ -1,0 +1,51 @@
+<h1>Material Rothko</h1>
+<p>Different permutations, including size, color gradient, and jitter</p>
+<p>Note that color names are just versioning, and may not reflect actual colors shown.</p>
+<hr/>
+<h1>Grey</h1>
+<app-material-rothko
+  [size]="2"
+  [blur]="30"
+  [jitter]="0"
+  [tileCols]="2"
+  [tileRows]="4"
+  [colorScheme]="'grey'"
+  [colCount]="2"
+  [width]="'100%'"
+></app-material-rothko>
+<h1>Red</h1>
+<app-material-rothko
+  [size]="2"
+  [blur]="10"
+  [colorRotate]="false"
+  [jitter]="10"
+  [tileCols]="2"
+  [tileRows]="4"
+  [colorScheme]="'red'"
+  [colCount]="2"
+  [width]="'100%'"
+></app-material-rothko>
+<h1>Blue</h1>
+<app-material-rothko
+  [size]="10"
+  [tileCols]="16"
+  [tileRows]="4"
+  [colorScheme]="'blue'"
+  [colCount]="192"
+  [width]="'100%'"></app-material-rothko>
+<h1>Green</h1>
+<app-material-rothko
+  [size]="20"
+  [tileCols]="1"
+  [tileRows]="1"
+  [colorScheme]="'green'"
+  [colCount]="10"
+  [width]="'100%'"></app-material-rothko>
+<h1>Random</h1>
+<app-material-rothko
+  [size]="8"
+  [tileCols]="16"
+  [tileRows]="1"
+  [colorScheme]="''"
+  [colCount]="192"
+  [width]="'100%'"></app-material-rothko>
