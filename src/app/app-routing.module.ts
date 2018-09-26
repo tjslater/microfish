@@ -6,7 +6,7 @@ import {AppComponent} from './app.component';
 
 
 const routes: Routes = [
-  { path: 'rothko', component: RothkoComponent },
+  { path: '/rothko', component: RothkoComponent },
   { path: '', redirectTo: '/rothko', pathMatch: 'full' },
 ];
 
